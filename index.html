@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kurskasy</title>
+
+    <script>
+        function eurozloty() {
+            var a = parseFloat(document.getElementById("a").value);
+            var b = parseFloat(document.getElementById("b").value);
+            document.getElementById("wynik1").innerHTML = b / a;
+        }
+
+
+
+    </script>
+</head>
+
+<body>
+
+    <h1>Kalkulator euro na złotówki</h1>
+    <p>podaj kurs euro</p>
+    <input type="text" id="a">
+    <p>podaj liczbę złotówek</p>
+    <input type="text" id="b">
+    <br></br>
+    <div id="wynik1">Tu ukaże się wynik</div>
+    <br></br>
+    <button onclick="eurozloty()">=</button>
+
+
+
+</body>
+
+</html>
